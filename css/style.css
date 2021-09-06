@@ -1,0 +1,484 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+.cistac{
+	clear:both;
+}
+body{
+	/* background-image:url('../img/sample.jpg');
+	background-repeat:repeat; */
+	font-size:22px;
+	font-family: 'Dekko', cursive;
+	color:#fff;
+	background:url('../img/sample.jpg') repeat 0px 0px;
+}
+
+/*************************************************** ZAGLAVLJE ***************************************************/ 
+.okvir{
+	width:1360px;
+	margin:0px auto;
+	border-radius:30px;
+	border-bottom:2px double #fff;
+}
+.zeleno{
+	border-color:#98c13c;
+}
+.last{
+	border:none;
+}
+
+#zaglavlje{
+	width:inherit;
+	min-height:130px;
+}
+#logo{
+	float:left;
+	margin-top:10px;
+}
+#meni{
+	float:right;
+}
+#meni ul{
+	font-size:30px;
+	list-style-type:none;
+	padding:50px 15px;
+}
+#meni ul li{
+	display:inline;
+	margin:0px 40px;
+	padding:5px 25px;
+	border-radius:30px;
+	background-color:#98c13c;
+}
+#meni ul li a{
+	text-decoration:none;
+	color:#000;
+}
+#meni ul li a:hover{
+	color:#fff;
+}
+
+/*************************************************** SADRZAJ ***************************************************/
+#sadrzaj{
+	width:inherit;
+	min-height:300px;
+	margin-top:30px;
+	margin-bottom:50px;
+}
+#levo{
+	width:45%;
+	float:left;
+	margin-left:40px;
+}
+#desno{
+	width:40%;
+	float:right;
+	margin-right:80px;
+}
+h1{
+	font-size:45px;
+}
+p{
+	text-align:justify;
+	text-indent:25px;
+	margin-top:15px;
+	
+}
+#desno table{
+	width:600px;
+	height:300px;
+	border-radius:30px;
+	font-size:22px;
+	text-align:center;
+	border-spacing:20px;
+	margin-top:20px;
+}
+
+#desno table th, #desno table td{
+	background-color:#98c13c;
+	color:#0b0b0b;
+}
+
+#desno table caption{
+	text-transform:uppercase;
+	font-size:25px;
+}
+#desno table tr td, #desno table tr th{
+	border-radius:30px;
+	/*border:1px solid #98c13c;*/
+}
+
+ /*************************************************** SLIKE I ANIMACIJE ***************************************************/
+#slike{
+	width:inherit;
+	padding-top:30px;
+	min-height:300px;
+}
+.slika{
+	background-size:cover;
+	width:400px;
+	height:300px;
+	opacity:0.5;
+	float:left;
+	margin:0px 0px 30px 42px;
+	position:relative;
+	animation-fill-mode: forwards;
+}
+.slika:hover{
+	opacity:0.8;
+	transform:scale(1.1,1.1);
+	filter:brightness(1.1);
+}
+.jedan{
+	animation-name:animacija;
+	animation-duration:5s;
+}
+.jedan img{
+	border-radius:0px 0px 0px 30px;
+}
+.dva{
+	animation-name:animacija1;
+	animation-duration:4.5s;
+}
+.tri{
+	animation-name:animacija2;
+	animation-duration:3s;
+}
+.tri img{
+	border-radius:0px 0px 30px 0px;
+}
+
+@keyframes animacija {
+	from {left:-1050px;}
+	to {left:0px;}
+}
+@keyframes animacija1{
+	from {left:-1300px;}
+	to {left:0px;}
+}
+@keyframes animacija2{
+	from {left:-1950px;}
+	to {left:0px;}
+}
+
+/*************************************************** CINJENICE ***************************************************/
+ol li{
+	padding:5px 0px 5px 10px;
+}
+ol{
+	list-style-position:inside;
+}
+#last{
+	/*padding-bottom:60px;*/
+}
+#facts{
+	width:inherit;
+	border-color:#98c13c;
+	min-height:300px;
+	padding-left:40px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+#facts h2{
+	font-size:40px;
+	color:#98c13c;
+}
+#facts ol li a{
+	color:#98c13c;
+	text-decoration:none;
+	
+}
+
+/*************************************************** FUTER ***************************************************/
+#futer{
+	width:1100px;
+	min-height:50px;
+	margin:0px auto;
+}
+.fab, .fas{
+	font-size:40px;
+}
+#maliMeni{
+	float:left;
+	width:500px;
+	min-height:30px;
+	margin-top:40px;
+}
+#maliMeni ul{
+	list-style-type:none;
+}
+#maliMeni a{
+	text-decoration:none;
+}
+#futer a{
+	text-decoration:none;
+	color:#fff;
+}
+#futer ul{
+	list-style-type:none;
+	font-size:22px;
+}
+#futer .mali{
+	width:inherit;
+	height:25px;
+	float:left;
+}
+#futer .mali ul li{
+	display:inline-block;
+	margin-left:30px;
+}
+#maliMeni .bottom ul li{
+	font-size:18px;
+	margin-left:25px;
+}
+#maliMeni .bottom ul{
+	margin-left:17px;
+}
+#maliMeni .top ul li a{
+	color:#98c13c;
+}
+
+/*************************************************** WEB ICONS ***************************************************/
+#webIcons{
+	float:right;
+	width:360px;
+	height:150px;
+}
+#webIcons li{
+	display:inline-block;
+	margin-left:50px;
+}
+#webIcons p{
+	text-align:center;
+	font-size:22px;
+}
+.fab, .fab, .fas{
+	padding-top:10px;
+	width:60px;
+	height:50px;
+	text-align:center;
+	border-radius:40px;
+	margin-top:15px;
+}
+.fa-facebook-f{
+	background-color:#4267b2;
+}
+.fa-twitter{
+	color:#00aced;
+	background-color:#fff;
+}
+.fa-rss{
+	background-color:#f08834;
+}
+/*************************************************** SADRZAJ DRUGE STRANICE ***************************************************/
+#kontejner{
+	width:inherit;
+	padding-bottom:30px;
+	/*display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;*/
+	min-height:1000px;
+}
+.rasa{
+	min-height:800px;
+	margin-top:30px;
+}
+.gore{
+	margin:0px auto;
+	width:1300px;
+	min-height:560px;
+}
+.gore img{
+	border-radius:5px;
+}
+.dole{
+	width:1300px;
+	margin:0px auto;
+	min-height:500px;
+}
+.levaStrana{
+	width:450px; 
+	float:left;
+	margin-top:50px;
+}
+.desnaStrana{
+	width:800px;
+	min-height:500px;
+	float:right;
+}
+#kontejner h1, #kontejner h2, #kontejner h3{
+		color:#98c13c;
+}
+#kontejner h1{
+	text-align:center;
+	font-size:60px;
+}
+#kontejner h1:hover{
+	animation-name: example;
+	animation-duration:4s;
+}
+@keyframes example {
+  0%   {color:#98c13c;}
+  25%  {color:#fff;}
+  50%  {color:#98c13c;}
+  75% {color:#fff;}
+  100% {color:#98c13c;}
+}
+
+#kontejner h2{
+	font-size:45px;
+}
+#kontejner h3{
+	font-size:30px;
+}
+#kontejner summary{
+	display:block;
+	margin:10px 0px 10px 30px;
+	color:#98c13c;
+	cursor:pointer;
+}
+/*************************************************** TABELA ***************************************************/
+#kontejner table{
+	color:#0b0b0b;
+	text-align:center;
+	width:450px;
+	height:150px;
+	border-spacing:10px;
+}
+#kontejner table th, #kontejner table td{
+	border-radius:30px;
+	background-color:#98c13c;
+	height:50px;
+	border:2px solid #fff;
+}
+
+/*************************************************** FORMA ***************************************************/
+#forma{
+	width:550px;
+	min-height:500px;
+	margin:30px auto;
+	border:2px solid #98c13c;
+	border-radius:50px;
+	padding:0px 25px 25px 0px;
+	background-color:#98c13c;
+}
+#forma p{
+	color:#000;
+	font-size:24px;
+	text-indent:0px;
+	text-align:center;
+	font-weight:bold;
+}
+#forma ul{
+	list-style-type:none;
+	margin-left:25px;
+	padding:5px 0px 0px 30px;
+	border:1px solid #000;
+	border-radius:40px;
+}
+#forma ul li{
+	display:block;
+	margin-right:30px;
+	margin:0px auto;
+	width:500px;
+	color:#000;
+}
+input[type="text"]{
+	width:90%;
+	border-radius:5px;
+	padding:5px;
+	font-size:20px;
+}
+input[type="radio"]{
+	width:20px;
+	height:20px;
+}
+input[type="checkbox"]{
+	width:20px;
+	height:20px;
+}
+#idea{
+	max-width:92%;
+	min-width:92%;
+	width:92%;
+	height:100px;
+	max-height:200px;
+	border-radius:5px;
+	padding:5px;
+	font-size:20px;
+}
+input[type="submit"], input[type="reset"]{
+	width:45%;
+	min-height:50px;
+	margin:20px 0px 0px 25px;
+	background-color:#000;
+	border-radius:10px;
+	cursor:pointer;
+	font-size:22px;
+	border:1px solid #98c13c;
+	color:#fff;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+	font-size:25px;
+}
+input[type="submit"], input[type="reset"], input[type="text"], #idea{
+	font-family: 'Dekko', cursive; 
+}
+input[type="text"]:focus, textarea:focus{
+	border:2px solid #000;
+}
+
+/*************************************************** AUTOR ***************************************************/
+#autor{
+	width:900px;
+	min-height:600px;
+	background-color:#98c13c;
+	margin:40px auto;
+	border-radius:20px;
+}
+#autorSlika{
+	float:left;
+	width:250px;
+	height:350px;
+	margin:110px 35px;
+}
+#autorSlika img{
+	border-radius:20px;
+}
+#oAutoru{
+	float:right;
+	width:500px;
+	min-height:200px;
+	margin:55px 35px 0px 0px;
+}
+#oAutoru h1, #oAutoru h2, #oAutoru p{
+	color:#000;
+	display:block;
+	width:100%;
+	line-height:normal;
+}
+#oAutoru h1{
+	font-size:35px;
+	height:50px;
+	text-decoration:underline;
+}
+#oAutoru h2{
+	font-size:25px;
+	height:40px;
+	margin-top:5px;
+}
+#oAutoru p{
+	font-size:22px;
+	text-indent:5px;
+	margin-top:-2px;
+}
+#oAutoru h1{
+	animation-name:example1;
+	animation-duration:4s;
+}
+@keyframes example1 {
+  0%   {color:#000;}
+  50%  {color:#fff;}
+  100% {color:000;}
+}
